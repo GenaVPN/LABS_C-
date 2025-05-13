@@ -19,7 +19,7 @@ void fill_ctr(cleaner& per) {
 	string BREND[4] = { "ROBOROCK", "DREAME", "XIAOMI","DYSON" };
 	string MATERIAL[4] = { "PLASTIC", "METAL", "ALUMINUM", "CARBON" };
 	string VERSION[4] = { "PRO", "LITE", "STANDARD", "ULTIMATE" };
-	string FORM[2] = { " –”√", " ¬¿ƒ–¿“" };
+	string FORM[2] = { "√ä√ê√ì√É", "√ä√Ç√Ä√Ñ√ê√Ä√í" };
 
 	per.brend = BREND[rand() % 4];
 	per.material = MATERIAL[rand() % 4];
@@ -31,8 +31,8 @@ void fill_ctr(cleaner& per) {
 }
 
 void show_struct(cleaner& per) {
-	cout << "¡–≈Õƒ: " << per.brend << " Ã¿“≈–»¿À: " << per.material << " ¬ÂÒËˇ: " << per.version << " ‘ÓÏ‡: " << per.form;
-	cout << " ÃÓ˘ÌÓÒÚ¸: " << per.power << " ÷ÂÌ‡: " << per.price << " ”Ó‚ÂÌ¸ ¯ÛÏ‡: " << per.noise << endl;
+	cout << "√Å√ê√Ö√ç√Ñ: " << per.brend << " √å√Ä√í√Ö√ê√à√Ä√ã: " << per.material << " √Ç√•√∞√±√®√ø: " << per.version << " √î√Æ√∞√¨√†: " << per.form;
+	cout << " √å√Æ√π√≠√Æ√±√≤√º: " << per.power << " √ñ√•√≠√†: " << per.price << " √ì√∞√Æ√¢√•√≠√º √∏√≥√¨√†: " << per.noise << endl;
 }
 
 int main()
@@ -54,21 +54,21 @@ int main()
 
 	while (req != MENU_EXIT) {
 		system("cls");
-		cout << "  1. «‡ÔÓÎÌËÚ¸ ·‡ÁÛ ÒÎÛ˜‡ÈÌ˚ÏË ‰‡ÌÌ˚ÏË.\n";
-		cout << "  2. —Óı‡ÌËÚ¸ ·‡ÁÛ ‰‡ÌÌ˚ı ‚ Ù‡ÈÎ.\n";
-		cout << "  3. «‡„ÛÁËÚ¸ ·‡ÁÛ ‰‡ÌÌ˚ı ËÁ Ù‡ÈÎ‡.\n";
-		cout << "  4. œÓÍ‡Á‡Ú¸ ·‡ÁÛ ‰‡ÌÌ˚ı.\n";
-		cout << "  5. œÓÒ˜ËÚ‡Ú¸ ÍÓÎ-‚Ó Ô˚ÎÂÒÓÒÓ‚ Í‡Ê‰Ó„Ó ·ÂÌ‰‡.\n";
-		cout << "  6. ŒÔÂ‰ÂÎËÚ¸ ÏÓ‰ÂÎË Ò ˆÂÌÓÈ, ÏÂÌ¸¯ÂÈ ˜ÂÏ n Û·.\n";
-		cout << "  7. Õ‡ÈÚË ÏÓ‰ÂÎ¸ Ò ÏÓ˘ÌÓÒÚ¸˛, ·ÓÎ¸¯ÂÈ ˜ÂÏ ÒÂ‰ÌÂÂ ‡ËÙÏÂÚË˜ÂÒÍÓÂ ÏÓ˘ÌÓÒÚÂÈ Ë ÔÓ Ò‡ÏÓÈ ÌËÁÍÓÈ ˆÂÌÂ.\n";
-		cout << "  ESC. ¬˚ıÓ‰.\n";
+		cout << "  1. √á√†√Ø√Æ√´√≠√®√≤√º √°√†√ß√≥ √±√´√≥√∑√†√©√≠√ª√¨√® √§√†√≠√≠√ª√¨√®.\n";
+		cout << "  2. √ë√Æ√µ√∞√†√≠√®√≤√º √°√†√ß√≥ √§√†√≠√≠√ª√µ √¢ √¥√†√©√´.\n";
+		cout << "  3. √á√†√£√∞√≥√ß√®√≤√º √°√†√ß√≥ √§√†√≠√≠√ª√µ √®√ß √¥√†√©√´√†.\n";
+		cout << "  4. √è√Æ√™√†√ß√†√≤√º √°√†√ß√≥ √§√†√≠√≠√ª√µ.\n";
+		cout << "  5. √è√Æ√±√∑√®√≤√†√≤√º √™√Æ√´-√¢√Æ √Ø√ª√´√•√±√Æ√±√Æ√¢ √™√†√¶√§√Æ√£√Æ √°√∞√•√≠√§√†.\n";
+		cout << "  6. √é√Ø√∞√•√§√•√´√®√≤√º √¨√Æ√§√•√´√® √± √∂√•√≠√Æ√©, √¨√•√≠√º√∏√•√© √∑√•√¨ n √∞√≥√°.\n";
+		cout << "  7. √ç√†√©√≤√® √¨√Æ√§√•√´√º √± √¨√Æ√π√≠√Æ√±√≤√º√æ, √°√Æ√´√º√∏√•√© √∑√•√¨ √±√∞√•√§√≠√•√• √†√∞√®√¥√¨√•√≤√®√∑√•√±√™√Æ√• √¨√Æ√π√≠√Æ√±√≤√•√© √® √Ø√Æ √±√†√¨√Æ√© √≠√®√ß√™√Æ√© √∂√•√≠√•.\n";
+		cout << "  ESC. √Ç√ª√µ√Æ√§.\n";
 		req = _getch();
 		switch (req)
 		{
 		case MENU_1: {
 			system("cls");
 			for (int i = 0; i < n; i++) { fill_ctr(robot[i]); }
-			cout << "«‡ÔÓÎÌËÎ ÒÎÛ˜‡ÈÌÓ";
+			cout << "√á√†√Ø√Æ√´√≠√®√´ √±√´√≥√∑√†√©√≠√Æ";
 			_getch();
 			break;
 		}
@@ -77,16 +77,18 @@ int main()
 			ofstream file("text.t33", ios::binary);
 			file.write((char*)robot, sizeof(robot));
 			file.close();
-			cout << "«¿œ»—¿À ¬ ‘¿…À";
+			cout << "√á√Ä√è√à√ë√Ä√ã √Ç √î√Ä√â√ã";
 			_getch();
 			break;
 		}
 		case MENU_3: {
 			system("cls");
 			ifstream file("text.t33", ios::binary);
+if (file.is_open()){
 			file.read((char*)robot, sizeof(robot));
 			file.close();
-			cout << "œ–Œ◊»“¿À »« ‘¿…À";
+			cout << "√è√ê√é√ó√à√í√Ä√ã √à√á √î√Ä√â√ã";}
+else {cout<<"–û—à–∏–±–∫–∞ –ø—Ä–∏ –æ—Ç–∫—Ä—ã—Ç–∏–µ —Ñ–∞–π–ª–∞"}
 			_getch();
 			break;
 		}
@@ -99,28 +101,28 @@ int main()
 		case MENU_5: {
 			system("cls");
 			int count_roborock = 0, count_dreame = 0, count_xiaomi = 0, count_dyson = 0;
-			cout << "œÓÒ˜ËÚ‡Ú¸ ÍÓÎ-‚Ó Ô˚ÎÂÒÓÒÓ‚ Í‡Ê‰Ó„Ó ·ÂÌ‰‡\n";
+			cout << "√è√Æ√±√∑√®√≤√†√≤√º √™√Æ√´-√¢√Æ √Ø√ª√´√•√±√Æ√±√Æ√¢ √™√†√¶√§√Æ√£√Æ √°√∞√•√≠√§√†\n";
 			for (int i = 0; i < n; i++) {
 				if (robot[i].brend == "ROBOROCK") count_roborock++;
 				else if (robot[i].brend == "DREAME") count_dreame++;
 				else if (robot[i].brend == "XIAOMI") count_xiaomi++;
 				else if (robot[i].brend == "DYSON") count_dyson++;
 			}
-			cout << "—“¿“»—“» ¿ œŒ ¡–≈Õƒ¿Ã:\n";
-			cout << "ROBOROCK: " << count_roborock << " ¯Ú.\n";
-			cout << "DREAME: " << count_dreame << " ¯Ú.\n";
-			cout << "XIAOMI: " << count_xiaomi << " ¯Ú.\n";
-			cout << "DYSON: " << count_dyson << " ¯Ú.\n";
+			cout << "√ë√í√Ä√í√à√ë√í√à√ä√Ä √è√é √Å√ê√Ö√ç√Ñ√Ä√å:\n";
+			cout << "ROBOROCK: " << count_roborock << " √∏√≤.\n";
+			cout << "DREAME: " << count_dreame << " √∏√≤.\n";
+			cout << "XIAOMI: " << count_xiaomi << " √∏√≤.\n";
+			cout << "DYSON: " << count_dyson << " √∏√≤.\n";
 			_getch();
 			break;
 		}
 		case MENU_6: {
 			system("cls");
 			int price = 0;
-			cout << "ŒÔÂ‰ÂÎËÚ¸ ÏÓ‰ÂÎË Ò ˆÂÌÓÈ, ÏÂÌ¸¯ÂÈ ˜ÂÏ n Û·.\n";
-			cout << "¬‚Â‰ËÚÂ ˜ËÒÎÓ n: ";
+			cout << "√é√Ø√∞√•√§√•√´√®√≤√º √¨√Æ√§√•√´√® √± √∂√•√≠√Æ√©, √¨√•√≠√º√∏√•√© √∑√•√¨ n √∞√≥√°.\n";
+			cout << "√Ç√¢√•√§√®√≤√• √∑√®√±√´√Æ n: ";
 			cin >> price;
-			cout << "ÃÓ‰ÂÎË, ‰Â¯Â‚ÎÂ Ì‡ÁÌ‡˜ÂÌÌÓÈ ˆÂÌ˚: " << endl;
+			cout << "√å√Æ√§√•√´√®, √§√•√∏√•√¢√´√• √≠√†√ß√≠√†√∑√•√≠√≠√Æ√© √∂√•√≠√ª: " << endl;
 			for (int i = 0; i < n; i++)
 			{
 				if (robot[i].price < price)
@@ -155,8 +157,8 @@ int main()
 					pust = robot[i];
 				}
 			}
-			cout << "Õ‡ÈÚË ÏÓ‰ÂÎ¸ Ò ÏÓ˘ÌÓÒÚ¸˛, ·ÓÎ¸¯ÂÈ ˜ÂÏ ÒÂ‰ÌÂÂ ‡ËÙÏÂÚË˜ÂÒÍÓÂ ÏÓ˘ÌÓÒÚÂÈ Ë ÔÓ Ò‡ÏÓÈ ÌËÁÍÓÈ ˆÂÌÂ" << endl;
-			cout << "Õ¿…ƒ≈ÕÕ¿ﬂ ÃŒƒ≈À‹: " << endl;
+			cout << "√ç√†√©√≤√® √¨√Æ√§√•√´√º √± √¨√Æ√π√≠√Æ√±√≤√º√æ, √°√Æ√´√º√∏√•√© √∑√•√¨ √±√∞√•√§√≠√•√• √†√∞√®√¥√¨√•√≤√®√∑√•√±√™√Æ√• √¨√Æ√π√≠√Æ√±√≤√•√© √® √Ø√Æ √±√†√¨√Æ√© √≠√®√ß√™√Æ√© √∂√•√≠√•" << endl;
+			cout << "√ç√Ä√â√Ñ√Ö√ç√ç√Ä√ü √å√é√Ñ√Ö√ã√ú: " << endl;
 			show_struct(pust);
 			_getch();
 			break;
